@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add New Vehicle</title>
+  <style>
+    /* Basic styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Form Styling */
+    form {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add New Vehicle</h1>
+    <form id="vehicleForm">
+      <div>
+        <label for="vehicleName">Name:</label>
+        <input type="text" id="vehicleName" name="name" required />
+      </div>
+      <div>
+        <label for="seater">Seater:</label>
+        <input type="number" id="seater" name="seater" required />
+      </div>
+      <div>
+        <label for="pricePerDay">Price Per Day:</label>
+        <input type="number" id="pricePerDay" name="price" required />
+      </div>
+      <div>
+        <label for="imageUrl">Image URL:</label>
+        <input type="url" id="imageUrl" name="imageUrl" required />
+      </div>
+      <button type="submit">Add Vehicle</button>
+    </form>
+  </div>
+
+  <script>
+    
+    
+    // Check if the user is logged in by verifying the token in localStorage
+    document.addEventListener('DOMContentLoaded', function() {
+      const token = localStorage.getItem('authToken');
+      
+      // If no token exists, redirect to the login page
+      if (!token) {
+        window.location.href = 'login.html';  // Replace with your login page URL
+      } else {
+        fetchAllData();  // Fetch messages data if token is present
+      }
+    });
+
+
+    <!--JS for Vehicle form-->
+
+  const form2 = document.getElementById('vehicleForm');
+  const webAppUrl2 = 'https://script.google.com/macros/s/AKfycbxtHP7oYbOvWQpuFpJBRaLX5J8TIpNeBdb15BxnnP7K1G0PUkdTFXHzuvnFBaBaTyev/exec';  // Replace with your actual Web App URL
+
+  form2.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form2);  // Use form2 here
+    formData.append('action', 'submit');
+    formData.append('sheet', 'Vehicles');  // Specify that we're submitting to Vehicles
+
+    fetch(webAppUrl2, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        alert('Vehicle Added Sucessfully');
+        form2.reset();  // Use form2 to reset the form
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+  
+  </script>
+</body>
+</html>

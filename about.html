@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>OnCall Travels & Tours</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        /*form from and to */
+
+        .dropdown-list {
+            display: none;
+            position: absolute;
+            background-color: #ffffff !important;
+            /* Ensure the background color of the dropdown is white */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+            z-index: 1;
+            border-radius: 4px !important;
+            /* Add border radius */
+            overflow: hidden !important;
+            /* Ensure the border radius is applied correctly */
+        }
+
+        .dropdown-list div {
+            background-color: #ffffff !important;
+            /* Set the background color of each dropdown item to white */
+            color: black !important;
+            padding: 8px 16px !important;
+            /* Adjusted padding for better spacing */
+            text-decoration: none !important;
+            display: block !important;
+            box-sizing: border-box !important;
+            /* Ensure padding does not affect the box size */
+            width: 100% !important;
+        }
+
+        .dropdown-list div:hover {
+            background-color: #1092ad !important;
+            /* Highlight background color on hover */
+            color: #ffffff !important;
+            /* Change text color on hover for better contrast */
+        }
+
+        .form-wrap {
+            position: relative !important;
+            /* Ensure the dropdown is positioned relative to the input */
+        }
+    </style>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block shadow"
+      data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container"><a class="navbar-brand" href="index.html">OnCall Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+              </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                          href="index.html">Home</a></li>
+                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                          href="about.html">About</a></li>
+                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                          href="service.html">Services</a></li>
+                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                          href="blog.html">Blog</a></li>
+                  <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page"
+                          href="contact.html">Contact</a></li>
+
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<!-- Add JavaScript to set active class -->
+<script>
+// JavaScript to add 'active' class to current page's nav link
+document.querySelectorAll('.nav-link').forEach(link => {
+    // Get the full path and query string without hash
+    const currentPath = window.location.pathname + window.location.search;
+    
+    // Create a new URL object for the link to get its path and search string
+    const linkUrl = new URL(link.href);
+    const linkPath = linkUrl.pathname + linkUrl.search;
+
+    // Check if the paths match
+    if (currentPath.includes(linkPath) || 
+        (link.getAttribute('href') === 'index.html' && currentPath === '/')) {
+        link.classList.add('active');
+    }
+});
+
+</script>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+        <div class="container-fluid">
+          <!-- <div class="divider divider-decorate"></div> -->
+          <!--First row-->
+          <!-- 
+            - #ABOUT US
+            -->
+            <h2 class="mt-6">ABOUT US</h2>
+            <section class="about-section" style="background-image: url('./images/image.png');">
+          <div class=" container about-us-container">
+
+              
+              <div class="about-us-content">
+              
+              
+                <p>Welcome to <strong>onCall Travel</strong>, where your dream destinations are just a call away!</p>
+                <p>At onCall Travel, we are passionate about creating unforgettable travel experiences tailored just for you. Founded
+                  with a vision to provide exceptional service and personalized itineraries, we are a dedicated team of travel experts
+                  who understand that every journey is unique.</p>
+              
+                <h2 class=" ">What We Do</h2>
+                <p>Whether you’re planning a relaxing beach getaway, an adventurous mountain trek, or a cultural city exploration,
+                  onCall Travel is here to help. We offer a wide range of services, including flight bookings, hotel reservations, car
+                  rentals, guided tours, and custom travel packages. Our aim is to make your travel planning seamless, enjoyable, and
+                  stress-free.</p>
+              
+                <h2>Why Choose Us?</h2>
+                <ul>
+                  <li><strong>Personalized Service:</strong> We believe that travel should be as unique as you are. Our experienced
+                    agents work closely with you to understand your preferences and create a customized travel plan that suits your
+                    needs and budget.</li>
+                  <li><strong>24/7 Support:</strong> At onCall Travel, we are always just a call away. Whether you need assistance
+                    with
+                    a booking, have a last-minute change, or need support during your trip, our team is available around the clock to
+                    ensure your journey is smooth and worry-free.</li>
+                  <li><strong>Expert Knowledge:</strong> Our team consists of travel enthusiasts who have firsthand experience in the
+                    destinations we offer. We provide insightful advice, tips, and recommendations to help you make the most of your
+                    travel experience.</li>
+                  <li><strong>Exclusive Deals:</strong> Thanks to our strong relationships with airlines, hotels, and tour operators,
+                    we
+                    are able to offer you exclusive deals and discounts, making your dream vacation more affordable.</li>
+                </ul>
+              </div>
+
+    
+        </section>
+          <!--Second row-->
+          <h3 style="margin-top: 60px">Our Values</h3>
+          <div class="divider divider-decorate"></div>
+          <div
+            id="value"
+            class="row row-50  justify-content-sm-center text-left bg-gray-lighter"
+          >
+            <div class="col-md-2">
+              <article class="box-minimal box-minimal-border">
+                <div
+                  class="box-minimal-icon mdi mdi-emoticon"
+                  style="font-size: 100px; color: #0d5c7e"
+                ></div>
+                <p
+                  class="big box-minimal-title"
+                  style="color: #0d5c7e; font-size: 20px"
+                >
+                  <strong>Customer Satisfaction</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  We strive to ensure every customer is
+                  <strong>satisfied with our services</strong>, providing
+                  <strong>exceptional support</strong> and
+                  <strong>high-quality vehicles</strong>.
+                </div>
+              </article>
+            </div>
+  
+            <div class="col-md-2">
+              <article class="box-minimal box-minimal-border">
+                <div
+                  class="box-minimal-icon mdi mdi-cash"
+                  style="font-size: 100px; color: #0d5c7e"
+                ></div>
+                <p
+                  class="big box-minimal-title"
+                  style="color: #0d5c7e; font-size: 20px"
+                >
+                  <strong>Affordable Prices</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  Offering <strong>competitive pricing</strong> without
+                  <strong>compromising on quality and service</strong>.
+                </div>
+              </article>
+            </div>
+  
+            <div class="col-md-2">
+              <article class="box-minimal box-minimal-border">
+                <div
+                  class="box-minimal-icon mdi mdi-car"
+                  style="font-size: 100px; color: #0d5c7e"
+                ></div>
+                <p
+                  class="big box-minimal-title"
+                  style="color: #0d5c7e; font-size: 20px"
+                >
+                  <strong>Wide Selection</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  A <strong>diverse range of vehicles</strong> to meet your every
+                  need, from <strong>compact cars to luxury SUVs</strong>.
+                </div>
+              </article>
+            </div>
+  
+            <div class="col-md-2">
+              <article class="box-minimal box-minimal-border">
+                <div
+                  class="box-minimal-icon mdi mdi-map-marker"
+                  style="font-size: 100px; color: #0d5c7e"
+                ></div>
+                <p
+                  class="big box-minimal-title"
+                  style="color: #0d5c7e; font-size: 20px"
+                >
+                  <strong>Convenient Locations</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  <strong>Easily accessible rental locations</strong> in key
+                  cities.
+                </div>
+              </article>
+            </div>
+  
+            <div class="col-md-2">
+              <article class="box-minimal box-minimal-border">
+                <div
+                  class="box-minimal-icon mdi mdi-headset"
+                  style="font-size: 100px; color: #0d5c7e"
+                ></div>
+                <p
+                  class="big box-minimal-title"
+                  style="color: #0d5c7e; font-size: 20px"
+                >
+                  <strong>Excellent Support</strong>
+                </p>
+                <hr />
+                <div class="box-minimal-text text-spacing-sm">
+                  <strong>24/7 customer support</strong> to assist you at any
+                  time, ensuring a <strong>smooth rental experience</strong>.
+                </div>
+              </article>
+            </div>
+          </div>
+  
+          <!-- Third row -->
+           <!--  -->
+           <!--  -->
+          <!-- Teams-->
+          <div class="row">
+            <section id="team">
+              <div class="">
+                <div class="col-lg-12">
+                  <div class="col-lg-5">
+                    <div class=" text-start">
+                      <h5 class="text-secondary">Our Team</h5>
+                      <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Meet our team of experts</h3>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-1 bg-primary"></div>   -->
+                  <!-- teams card -->
+                  <section class="d-flex flex-wrap gap-3 justify-content-center">
+                    <div class="rounded shadow  col-lg-3 col-sm-5 h-75">
+                      <div class="rounded">
+                        <img src="images/teams/team_1.png" class="object-fit-scale border rounded" style="width: 300px; height: 400px;" alt="Circular Image of team">
+                        <div class="card-content">
+
+                          <h5 class="mt-4 mb-2">Hemant</h5>
+                          <p class="fs--1">CEO & Founder</p>
+                        </div>
+                      </div>
+                    </div>       
+                    <div class="rounded shadow  col-lg-3 col-sm-5 h-75">
+                      <div class="rounded ">
+                        <img src="images/teams/team_2.png" class="object-fit-scale border rounded" style="width: 300px; height: 400px;" alt="Circular Image of team">
+                        <div class="card-content">
+
+                          <h5 class="mt-4 mb-2">Dilip</h5>
+                          <p class="fs--1">Product Manager</p>
+                        </div>
+                      </div>
+                    </div>       
+                    <div class="rounded shadow  col-lg-3 col-sm-5 h-75">
+                      <div class="rounded ">
+                        <img src="images/teams/team_3.png" class="object-fit-scale border rounded" style="width: 300px; height: 400px;" alt="Circular Image of team">                        <div class="card-content">
+
+                          <h5 class="mt-4 mb-2">Samman</h5>
+                          <p class="fs--1">Marketing Manager</p>
+                        </div>
+                      </div>
+                    </div>       
+                    <div class="rounded shadow  col-lg-3 col-sm-5 h-75">
+                      <div class="rounded ">
+                        <img src="images/teams/team_4.png" class="object-fit-scale border rounded" style="width: 300px; height: 400px;" alt="Circular Image of team">                        <div class="card-content">
+
+                          <h5 class="mt-4 mb-2">Pariyoz</h5>
+                          <p class="fs--1">Sales Exeutive</p>
+                        </div>
+                      </div>
+                    </div>       
+                  </section>
+                
+              
+            </div>
+              
+    
+            </section>
+          </div>
+  
+          <!--Fourth row-->
+          <div class="row" style="background-color: #0d5c7e">
+            <div
+              class="col-md-12 d-flex align-items-center justify-content-center"
+            >
+              <!-- Long-Term Goals Below -->
+              <div
+                style="
+                  padding: 40px 80px;
+                  font-style: italic;
+                  font-size: 22px;
+                  color: #ffffff;
+                "
+              >
+                <q>
+                  With over the years of dedicated service, OnCall Travel &
+                  Tours has become a beacon of excellence in Nepal's travel
+                  industry. Our unwavering commitment to customer satisfaction,
+                  innovation, and quality has set us apart, guiding travelers
+                  through the rich tapestry of Nepal's culture and landscapes. We
+                  don't just create journeys; we craft unforgettable experiences
+                  that transcend the ordinary, making every adventure truly
+                  extraordinary.
+                </q>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!--Contact Section Content-->
+    <section class="contact-section section-lg bg-light text-center">
+      <div class="container-fluid">
+        <h3 style="color: black">CONTACT US</h3>
+        <div class="divider divider-decorate"></div>
+        <p>
+          Ready to explore the world with ease? Reach out to
+          <b>OnCall Tours and Travels Pvt. Ltd.</b> today. Our team is eager
+          to assist you with customized travel solutions that ensure
+          unforgettable experiences and seamless journeys. Let's start a
+          conversation and make your travel dreams a reality.
+        </p>
+
+        <div class="row">
+          <!-- First Column: Contact Information -->
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="p-4">
+              <div class="info-wrap">
+                <div class="info-item d-flex">
+                  <i class="mdi mdi-map-marker flex-shrink-0"></i>
+                  <div style="text-align: left">
+                    <h4>Address</h4>
+                    <p>Jadibuti, Kathmandu,44600</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="mdi mdi-phone flex-shrink-0"></i>
+                  <div style="text-align: left">
+                    <h4>Call Us</h4>
+                    <p>+977-9851363054</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex">
+                  <i class="mdi mdi-email flex-shrink-0"></i>
+                  <div style="text-align: left">
+                    <h4>Email Us</h4>
+                    <p>
+                      <a href="mailto:oncalltourstravels@gmail.com"
+                        >oncalltourstravels@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.526643536497!2d85.31771703633204!3d27.672766926921668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19014f5fca8d%3A0xcd01c32df66bee0e!2sOncall%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1726468394902!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <!-- Second Column: Contact Form -->
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div
+              class="php-email-form d-flex align-items-center justify-content-center"
+            >
+              <form id="contactForm" name="submit-to-google-sheet">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <label for="name-field" class="pb-2">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-field"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email-field"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="subject-field" class="pb-2">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject-field"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="10"
+                      id="message-field"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button
+                      class="button-submit"
+                      type="submit"
+                      style="
+                        margin-top: 10px;
+                        color: #ffffff;
+                        background: #0d5c7e;
+                        border: 0;
+                        padding: 12px 25px;
+                        border-radius: 50px;
+                        transition: background-color 0.3s ease;
+                      "
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-6">
+
+        <div class="container">
+            <div class="py-8 px-5 position-relative text-center"
+                style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
+                <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img
+                        src="assets/img/cta/send.png" style="max-width:70px;" alt="send icon" /></div>
+                <div class="position-absolute end-0 top-0 z-index--1"> <img src="assets/img/cta/shape-bg2.png"
+                        width="264" alt="cta shape" /></div>
+                <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img
+                        src="assets/img/cta/shape-bg1.png" style="max-width: 340px;" alt="cta shape" /></div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <h2 class="text-secondary lh-1-7 mb-7">Subscribe to get information, latest news and other
+                            interesting offers about Cobham</h2>
+                        <form class="row g-3 align-items-center w-lg-75 mx-auto" id="newsletterForm">
+                            <div class="col-sm">
+                                <div class="input-group-icon">
+                                    <input class="form-control form-little-squirrel-control" type="email" name="email"
+                                        placeholder="Enter email " aria-label="email" /><img class="input-box-icon"
+                                        src="assets/img/cta/mail.svg" width="17" alt="mail" />
+                                </div>
+                            </div>
+                            <div class="col-sm-auto">
+                                <button class="btn btn-danger orange-gradient-btn fs--1" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+      <section class="pb-0 pb-lg-4">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4" src="assets/img/logo_refresh.png" width="125" alt="jadoo" />
+              <p class="fs--1 text-secondary mb-0 fw-medium">Welcome to Oncall Travel & Tours Pvt. Ltd.! We offer rental services for cars and buses, perfect for exploring amazing local destinations. Enjoy a memorable and hassle-free journey with our reliable services!</p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Address</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Jadibuti, Kathmandu</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">44600, Nepal</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!"></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#value">Mission</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html#blog">Vision</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html#team">Team</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Special Links</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="index.html">Home</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="about.html">About</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="service.html">Services</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="blog.html">Blog</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="contact.html">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+              <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook" href="#!"><i class="fab fa-facebook-f"> </i></a><a class="text-decoration-none icon-item shadow-social" id="instagram" href="#!"><i class="fab fa-instagram"> </i></a><a class="text-decoration-none icon-item shadow-social" id="twitter" href="#!"><i class="fab fa-twitter"> </i></a></div>
+              <h4 class="fw-medium font-sans-serif text-secondary mb-3">Discover our app</h4>
+              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <hr>  
+    <div class="py-5 ">
+      <div class="col-md-6 mx-auto text-center">
+        <span class="mb-0 text-primary">
+          All rights reserved &copy; 2024 OnCall Travels & Tours
+        </span>
+      </div>
+      <div class="position-absolute bottom-0 end-0">
+        <small class="d-inline mr-2">
+          Powered by <a href="https://mbsoftech.com.np/" target="_blank" rel="noopener noreferrer" style="color: blue;">M & MB Softech</a> – Building your digital future
+        </small>
+      </div>          
+    </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <script src="//code.tidio.co/1ece3oawpq0buawc3rpbhpb6khps9kf3.js" async></script>
+
+    <!--JS for input validation-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document
+                .getElementById("bookingForm")
+                .addEventListener("submit", function (event) {
+                    // Get form elements
+                    const from = document.querySelector('input[name="from"]');
+                    const to = document.querySelector('input[name="to"]');
+                    const departDate = document.querySelector(
+                        'input[name="departDate"]'
+                    );
+                    const adults = document.querySelector('input[name="adults"]');
+                    const contact = document.querySelector('input[name="contact"]');
+
+                    // Validate required fields
+                    if (
+                        !from.value ||
+                        !to.value ||
+                        !departDate.value ||
+                        !adults.value ||
+                        !contact.value
+                    ) {
+                        alert("Please fill out all required fields.");
+                        event.preventDefault(); // Prevent form submission
+                        return; // Exit the function
+                    }
+
+                    // Validate contact number
+                    const contactValue = contact.value;
+                    if (!/^\d{1,13}$/.test(contactValue)) {
+                        alert("Contact number must be numeric and up to 13 digits.");
+                        event.preventDefault(); // Prevent form submission
+                        return; // Exit the function
+                    }
+
+                    // If all validations pass, form submission will proceed
+                });
+        });
+    </script>
+
+    <!--JS to dynamically replace the <select> elements with custom input fields and dropdown lists-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function setupDropdown(inputId, dropdownId) {
+                const input = document.getElementById(inputId);
+                const dropdown = document.getElementById(dropdownId);
+                const options = dropdown.querySelectorAll("div");
+
+                // Show the dropdown list when the input field is clicked
+                input.addEventListener("click", function () {
+                    dropdown.style.display = "block";
+                });
+
+                // Filter dropdown options based on user input
+                input.addEventListener("input", function () {
+                    const filter = input.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
+                    options.forEach((option) => {
+                        if (option.textContent.toLowerCase().includes(filter)) {
+                            // Check if option includes the input value
+                            option.style.display = "block"; // Show option if it matches the input
+                        } else {
+                            option.style.display = "none"; // Hide option if it doesn't match the input
+                        }
+                    });
+                });
+
+                // Set input field value to the selected option and hide the dropdown
+                options.forEach((option) => {
+                    option.addEventListener("click", function () {
+                        input.value = option.textContent; // Set input value to the selected option text
+                        dropdown.style.display = "none"; // Hide the dropdown list
+                    });
+                });
+
+                // Hide the dropdown list when clicking outside of the input field or dropdown list
+                document.addEventListener("click", function (event) {
+                    if (
+                        !input.contains(event.target) && // Check if the click is outside the input field
+                        !dropdown.contains(event.target) // Check if the click is outside the dropdown list
+                    ) {
+                        dropdown.style.display = "none"; // Hide the dropdown list
+                    }
+                });
+            }
+
+            // Setup the dropdowns for both "From" and "To" inputs
+            setupDropdown("fromCityInput", "fromDropdownList");
+            setupDropdown("toCityInput", "toDropdownList");
+        });
+    </script>
+
+    <!--JS for input validation-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document
+                .getElementById("bookingForm")
+                .addEventListener("submit", function (event) {
+                    // Get form elements
+                    const from = document.querySelector('select[name="from"]');
+                    const to = document.querySelector('select[name="to"]');
+                    const departDate = document.querySelector(
+                        'input[name="departDate"]'
+                    );
+                    const adults = document.querySelector('input[name="adults"]');
+                    const contact = document.querySelector('input[name="contact"]');
+
+                    // Validate required fields
+                    if (
+                        !from.value ||
+                        !to.value ||
+                        !departDate.value ||
+                        !adults.value ||
+                        !contact.value
+                    ) {
+                        alert("Please fill out all required fields.");
+                        event.preventDefault(); // Prevent form submission
+                        return; // Exit the function
+                    }
+
+                    // Validate contact number
+                    const contactValue = contact.value;
+                    if (!/^\d{1,13}$/.test(contactValue)) {
+                        alert("Contact number must be numeric and up to 13 digits.");
+                        event.preventDefault(); // Prevent form submission
+                        return; // Exit the function
+                    }
+                });
+        });
+    </script>
+
+<!--JS for Contact form-->
+<script>
+  const form2 = document.getElementById('contactForm');
+  const webAppUrl2 = 'https://script.google.com/macros/s/AKfycbyWvVcGXL7nsII1CQyVp_ZJlHukqvsw9GoZ49DeIklFe2deC26USozqw-bfNpBnftnR/exec';  // Replace with your actual Web App URL
+
+  form2.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form2);  // Use form2 here
+    formData.append('action', 'submit');
+    formData.append('sheet', 'Messages');  // Specify that we're submitting to Messages
+
+    fetch(webAppUrl2, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        alert('Message Sent');
+        form2.reset();  // Use form2 to reset the form
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
+
+
+<!--JS for Newsletter Subscription-->
+  <script>
+  const form3 = document.getElementById('newsletterForm');
+  const webAppUrl3 = 'https://script.google.com/macros/s/AKfycbwG_yJEJsJsG_7j9upLlvaxaOpwHcFfu4MJ6N_RHOL2Afn4-g34QkGzcO27KF0zWjuSWw/exec';  // Replace with your actual Web App URL
+
+  form3.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form3);  // Use form3 here
+    formData.append('action', 'submit');
+    formData.append('sheet', 'Newsletter');  // Specify that we're submitting to Newsletter
+
+    fetch(webAppUrl3, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        alert('Subscription Added');
+        form3.reset();  // Use form to reset the form
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+</script>
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
+        rel="stylesheet">
+</body>
+
+</html>

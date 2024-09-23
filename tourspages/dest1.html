@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bardiya National Park Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-bottom: 40px;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #tourDetails {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        overflow-y: scroll;
+      }
+
+      .tour-details {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        overflow: scroll;
+      }
+
+      .tour-details-image {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+      }
+
+      .tour-details-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .tour-details-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background: #fff;
+      }
+
+      .tour-duration-info {
+        display: flex;
+        background: #fff;
+      }
+
+      .tour-details-info h2 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .tour-price {
+        font-size: 1.2em;
+        color: #007bff;
+      }
+
+      .tour-duration {
+        font-size: 1.2em;
+        color: #007bff;
+        text-align: right;
+        padding: 10px;
+        background: #fff;
+      }
+
+      .tour-description {
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 2px;
+        box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+        height: 40px;
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: rgb(21, 49, 206);
+      }
+
+      .pen-icon {
+        margin-left: 10px;
+        color: #007bff;
+        cursor: pointer;
+      }
+
+      .tour-description h1 {
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="tourDetails" class="container">
+      <div class="tour-details">
+        <div class="tour-details-image">
+          <img src="../assets/img/dest/dest1.jpg" alt="Bardiya National Park" />
+        </div>
+        <div class="tour-details-info">
+          <span><h2>Bardiya National Park</h2></span>
+          <span class="tour-price">Price: $1200</span>
+        </div>
+        <div class="tour-duration-info">
+          <span class="tour-duration">Duration: 10 days</span>
+        </div>
+        <div class="tour-description">
+          <p>
+            Bardiya National Park is the largest national park in the lowland Terai, covering an area of 968 sq.km. The park, situated in Nepal's Western Terai, was established in 1976 to protect representative ecosystems and conserve the habitat of tigers and their prey species.
+          </p>
+          <p>
+            Initially known as the Karnali Wildlife Reserve, the park was renamed Bardiya Wildlife Reserve in 1982 and given its current status as a National Park in 1988. The park offers a sanctuary for a variety of endangered species including the Royal Bengal tiger, greater one-horned rhinoceros, and Gangetic dolphin.
+          </p>
+          <h2 class="ql-align-center">Babai Valley</h2>
+          <p>
+            The Babai Valley, a pristine and biodiverse area included in the park in 1984, is characterized by wooded grasslands and riverine forests. It is home to translocated rhinoceros and provides habitat for several wildlife species such as tigers, elephants, and gharial crocodiles.
+          </p>
+          <h2 class="ql-align-center">Flora and Fauna</h2>
+          <p>
+            The park boasts a diverse range of flora and fauna, including over 230 bird species and 30 different mammals. The park's lush forests and riverine areas are ideal for birdwatching, with species like the Bengal florican, black-necked stork, and little pratincole.
+          </p>
+          <h2 class="ql-align-center">Facilities</h2>
+          <p>
+            Visitors can enjoy cultural experiences at the Tharu Museum, and various facilities such as lodges, health posts, and communication services are available near the park headquarters at Thakurdwara.
+          </p>
+          <h2 class="ql-align-center">How to Get There</h2>
+          <p>
+            You can reach Bardiya National Park by taking a flight from Kathmandu to Nepalgunj, followed by a bus ride to the park's headquarters at Thakurdwara.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <p><a href="/">Back to Home</a></p>
+    </div>
+  </body>
+</html>

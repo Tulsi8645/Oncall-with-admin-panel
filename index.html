@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>OnCall Travels & Tours</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link href="assets/img/favicons/apple-touch-icon.png" rel="icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicons/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicons/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="assets/img/favicons/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+    <link rel="manifest" href="assets/img/favicons/manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+      /*form from and to */
+      html {
+        scroll-behavior: smooth;
+      }
+      .dropdown-list {
+        display: none;
+        position: absolute;
+        background-color: #ffffff !important; /* Ensure the background color of the dropdown is white */
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+        z-index: 1;
+        border-radius: 4px !important; /* Add border radius */
+        overflow: hidden !important; /* Ensure the border radius is applied correctly */
+      }
+
+      .dropdown-list div {
+        background-color: #ffffff !important; /* Set the background color of each dropdown item to white */
+        color: black !important;
+        padding: 8px 16px !important; /* Adjusted padding for better spacing */
+        text-decoration: none !important;
+        display: block !important;
+        box-sizing: border-box !important; /* Ensure padding does not affect the box size */
+        width: 100% !important;
+      }
+
+      .dropdown-list div:hover {
+        background-color: #1092ad !important; /* Highlight background color on hover */
+        color: #ffffff !important; /* Change text color on hover for better contrast */
+      }
+
+      .form-wrap {
+        position: relative !important; /* Ensure the dropdown is positioned relative to the input */
+      }
+    </style>
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link href="assets/css/theme.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block shadow"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">OnCall Travel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start"
+            >
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="service.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item px-3 px-xl-4">
+                <a
+                  class="nav-link fw-medium"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <!-- Profile Icon -->
+            <a
+              class="nav-link fw-medium"
+              href="login.html"
+              style="margin-left: auto; padding-left: 100px"
+            >
+              <i class="fas fa-user fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Add JavaScript to set active class -->
+      <script>
+        // JavaScript to add 'active' class to current page's nav link
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          if (
+            link.href === window.location.href ||
+            (link.getAttribute("href") === "index.html" &&
+              window.location.pathname === "/")
+          ) {
+            link.classList.add("active");
+          }
+        });
+      </script>
+      <section style="padding-top: 4rem">
+        <div class="swiper-form-wrap">
+          <!-- Swiper-->
+          <div
+            class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left swiper-align-left-custom context-dark bg-gray-darker"
+            data-loop="false"
+            data-autoplay="5500"
+            data-simulate-touch="false"
+            data-slide-effect="fade"
+          >
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                style="background-size: cover"
+                data-slide-bg="./images/swiper/oncalll.gif"
+              >
+                <div class="swiper-slide-caption">
+                  <div class="container container-bigger swiper-main-section">
+                    <div
+                      class="row row-fix justify-content-sm-center justify-content-md-start"
+                    >
+                      <div
+                        class="col-md-6 col-lg-5 col-xl-4 col-xxl-5"
+                        style="opacity: 0%"
+                      >
+                        <h3>Adventure Experiences</h3>
+                        <div class="divider divider-decorate"></div>
+                        <p class="text-spacing-sm">
+                          Imagine a journey tailored just for you. Our bespoke
+                          tour packages cater to your
+                          <strong>unique interests and desires</strong>,
+                          ensuring a
+                          <strong>personalized adventure</strong> that leaves
+                          <strong>lasting memories</strong>.
+                        </p>
+                        <a
+                          class="button button-default-outline button-nina button-sm"
+                          href="#"
+                          >discover more</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper controls-->
+            <div class="swiper-pagination-wrap">
+              <div class="container container-bigger">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container container-bigger form-request-wrap form-request-wrap-modern"
+          >
+            <div
+              class="row row-fix justify-content-sm-center justify-content-lg-end"
+            >
+              <div class="col-lg-6 col-xxl-5">
+                <div
+                  class="form-request form-request-modern bg-gray-lighter novi-background"
+                  style="
+                    background-image: url('./assets/img/hero/hero-img.png');
+                    background-size: cover;
+                    width: 100%;
+                    position: relative;
+                  "
+                >
+                  <h4>Find Destination</h4>
+                  <!-- RD Mailform-->
+                  <form class="rd-mailform form-fix" id="bookingForm">
+                    <div class="row row-20 row-fix">
+                      <div class="col-sm-12">
+                        <label class="form-label-outside">From</label>
+                        <div class="form-wrap form-wrap-inline">
+                          <input
+                            type="text"
+                            class="form-input"
+                            id="fromCityInput"
+                            name="from"
+                            placeholder="Enter or select city"
+                            autocomplete="off"
+                          />
+                          <div class="dropdown-list" id="fromDropdownList">
+                            <div>Kathmandu</div>
+                            <div>Chitwan</div>
+                            <div>Jomson</div>
+                            <div>Everest Base Camp</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <label class="form-label-outside">To</label>
+                        <div class="form-wrap form-wrap-inline">
+                          <input
+                            type="text"
+                            class="form-input"
+                            id="toCityInput"
+                            name="to"
+                            placeholder="Enter or select city"
+                            autocomplete="off"
+                          />
+                          <div class="dropdown-list" id="toDropdownList">
+                            <div>Kathmandu</div>
+                            <div>Chitwan</div>
+                            <div>Jomson</div>
+                            <div>Everest Base Camp</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <label class="form-label-outside">Depart Date</label>
+                        <div class="form-wrap form-wrap-validation">
+                          <input
+                            class="form-input"
+                            id="dateForm"
+                            name="departDate"
+                            placeholder="Choose the date"
+                            type="text"
+                            data-time-picker="date"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-6">
+                        <label class="form-label-outside">Duration</label>
+                        <div class="form-wrap form-wrap-validation">
+                          <select
+                            class="form-input select-filter"
+                            name="duration"
+                          >
+                            <option value="1">Any length</option>
+                            <option value="2">2 days</option>
+                            <option value="3">3 days</option>
+                            <option value="4">4 days</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <label class="form-label-outside">Adults</label>
+                        <div class="form-wrap form-wrap-modern">
+                          <input
+                            class="form-input input-append"
+                            id="form-element-stepper"
+                            name="adults"
+                            type="number"
+                            min="0"
+                            max="300"
+                            value="0"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <label class="form-label-outside">Children</label>
+                        <div class="form-wrap form-wrap-modern">
+                          <input
+                            class="form-input input-append"
+                            id="form-element-stepper"
+                            name="children"
+                            type="number"
+                            min="0"
+                            max="300"
+                            value="0"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <label class="form-label-outside">Contact Number</label>
+                        <div class="form-wrap form-wrap-inline">
+                          <input
+                            type="text"
+                            class="form-input contact-number-input"
+                            name="contact"
+                            placeholder="Enter your contact number"
+                            pattern="\d*"
+                            inputmode="numeric"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="from-wrap form-button">
+                      <button
+                        class="button button-inline button-secondary"
+                        type="submit"
+                      >
+                        BOOK THIS
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+        </div> -->
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5 pt-md-9" id="service">
+        <div class="container">
+          <div class="position-absolute z-index--1 end-0 d-none d-lg-block">
+            <img
+              src="assets/img/category/shape.svg"
+              style="max-width: 200px"
+              alt="service"
+            />
+          </div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">CATEGORY</h5>
+            <h3
+              class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+            >
+              We Offer Best Services
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3">
+                <article
+                  class="box-minimal-border d-flex flex-column align-items-center"
+                >
+                  <div class="box-minimal-icon novi-icon mdi mdi-car"></div>
+                  <p class="big box-minimal-title">
+                    <strong>Rent Vehicles</strong>
+                  </p>
+                  <hr />
+                  <div class="box-minimal-text text-spacing-sm">
+                    We offer an extensive range of
+                    <strong>vehicles for rent</strong>, designed to suit various
+                    needs and preferences. Whether you're looking for a sleek
+                    <strong>sedan</strong>, a spacious <strong>SUV</strong>, a
+                    reliable <strong>van</strong>, or a larger vehicle like a
+                    <strong>Hiace</strong> or <strong>bus</strong>, we’ve got
+                    you covered. Our fleet caters to both
+                    <strong>luxury and comfort</strong>, ensuring a smooth and
+                    enjoyable experience for all types of travelers, from
+                    families to corporate clients. Each vehicle is meticulously
+                    maintained and equipped with modern amenities for your
+                    convenience, making us the ideal choice for short-term trips
+                    or long-term rentals. Enjoy a seamless and personalized
+                    rental service that prioritizes your satisfaction.
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5" id="destination">
+        <div class="container">
+          <div
+            class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"
+          >
+            <img src="assets/img/dest/shape.svg" alt="destination" />
+          </div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">Hot Customer Choices</h5>
+            <h3
+              class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+            >
+              Top vehicles
+            </h3>
+          </div>
+          <div class="row" id="vehicle-container">
+            <!-- Dynamically generated cards will appear here -->
+          </div>
+        </div>
+
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <section
+        class="section section-lg novi-background bg-gray-lighter bg-cover bg-default text-center"
+      >
+        <div class="container-wide mb-5">
+          <div class="row row-50">
+            <div class="col-sm-12">
+              <h3>Latest Blogs</h3>
+              <div class="divider divider-decorate"></div>
+              <!-- Owl Carousel-->
+              <div
+                class="owl-carousel owl-carousel-team owl-carousel-inset"
+                data-items="1"
+                data-md-items="2"
+                data-xl-items="3"
+                data-stage-padding="15"
+                data-loop="true"
+                data-margin="30"
+                data-mouse-drag="false"
+                data-dots="true"
+                data-autoplay="true"
+              >
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img src="assets/img/blog/blog1.jpg" alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Mountains</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Rupesh</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >Top 10 places you must not miss while traveling to Mustang</a
+                        >
+                      </h5>
+                    </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img src="assets/img/blog/blog2.jpg" alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Tips</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Heera</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >The most amazing features of new BYD ATTO 3</a
+                        >
+                      </h5>
+                    </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2020 at 8:20 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="post-blog">
+                  <a class="post-blog-image" href="#"
+                    ><img src="assets/img/blog/blog3.jpg" alt="blog image"
+                  /></a>
+                  <div class="post-blog-caption">
+                    <div class="post-blog-caption-header">
+                      <ul class="post-blog-tags">
+                        <li><a class="button-tags" href="#">Traveling</a></li>
+                      </ul>
+                      <ul class="post-blog-meta">
+                        <li><span>by</span>&nbsp;<a href="#">Sujeet</a></li>
+                      </ul>
+                    </div>
+                    <div class="post-blog-caption-body">
+                      <h5>
+                        <a class="post-blog-title" href="#"
+                          >Your Personal Guide to 5 Best Places in Nepal</a
+                        >
+                      </h5>
+                    </div>
+                    <div class="post-blog-caption-footer">
+                      <time datetime="2019">Feb 27, 2019 at 6:53 pm</time
+                      ><a class="post-comment" href="#"
+                        ><span
+                          class="icon novi-icon icon-md-middle icon-gray-1 mdi mdi-comment"
+                        ></span
+                        ><span>12</span></a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-12">
+              <a
+                class="button button-secondary button-nina button-offset-lg"
+                href="#"
+                >view all blog posts</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="booking">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="mb-4 text-start">
+                <h5 class="text-secondary">Easy and Fast</h5>
+                <h3
+                  class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+                >
+                  Book your next trip in 3 easy steps
+                </h3>
+              </div>
+              <div class="d-flex align-items-start mb-5">
+                <div
+                  class="bg-primary me-sm-4 me-3 p-3"
+                  style="border-radius: 13px"
+                >
+                  <img
+                    src="assets/img/steps/selection.svg"
+                    width="22"
+                    alt="steps"
+                  />
+                </div>
+                <div class="flex-1">
+                  <h5 class="text-secondary fw-bold fs-0">
+                    Choose Destination
+                  </h5>
+                  <p>
+                    Choose your favourite place. No matter
+                    <br class="d-none d-sm-block" />
+                    where you want to explore adventure.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-5">
+                <div
+                  class="bg-danger me-sm-4 me-3 p-3"
+                  style="border-radius: 13px"
+                >
+                  <img
+                    src="assets/img/steps/water-sport.svg"
+                    width="22"
+                    alt="steps"
+                  />
+                </div>
+                <div class="flex-1">
+                  <h5 class="text-secondary fw-bold fs-0">Make Payment</h5>
+                  <p>
+                    After find your perfect spot, make your
+                    <br class="d-none d-sm-block" />
+                    payment and get ready to travel.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-5">
+                <div
+                  class="bg-info me-sm-4 me-3 p-3"
+                  style="border-radius: 13px"
+                >
+                  <img src="assets/img/steps/taxi.svg" width="22" alt="steps" />
+                </div>
+                <div class="flex-1">
+                  <h5 class="text-secondary fw-bold fs-0">
+                    Reach Your Destination!
+                  </h5>
+                  <p>
+                    Lastly, you have to arrive at our office or even we pick you
+                    up <br class="d-none d-sm-block" />
+                    on time and enjoy the vacation.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-start"
+            >
+              <div
+                class="card position-relative shadow"
+                style="max-width: 370px"
+              >
+                <div
+                  class="position-absolute z-index--1 me-10 me-xxl-0"
+                  style="right: -160px; top: -210px"
+                >
+                  <img
+                    src="assets/img/steps/bg.png"
+                    style="max-width: 550px"
+                    alt="shape"
+                  />
+                </div>
+                <div class="card-body p-3">
+                  <img
+                    class="mb-4 mt-2 rounded-2 w-100"
+                    src="images/gosainkunda.jpg"
+                    alt="booking"
+                  />
+                  <div>
+                    <h5 class="fw-medium">Trip To Gosainkunda</h5>
+                    <p class="fs--1 mb-3 fw-medium">
+                      9-14 Sept. | by Sujan Bhandari
+                    </p>
+                    <div class="icon-group mb-4">
+                      <span class="btn icon-item">
+                        <img src="assets/img/steps/leaf.svg" alt="" /></span
+                      ><span class="btn icon-item">
+                        <img src="assets/img/steps/map.svg" alt="" /></span
+                      ><span class="btn icon-item">
+                        <img src="assets/img/steps/send.svg" alt=""
+                      /></span>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div class="d-flex align-items-center mt-n1">
+                        <img
+                          class="me-3"
+                          src="assets/img/steps/building.svg"
+                          width="18"
+                          alt="building"
+                        /><span class="fs--1 fw-medium">21 people going</span>
+                      </div>
+                      <div class="show-onhover position-relative">
+                        <div
+                          class="card hideEl shadow position-absolute end-0 start-xl-50 bottom-100 translate-xl-middle-x ms-3"
+                          style="width: 260px; border-radius: 18px"
+                        >
+                          <div class="card-body py-3">
+                            <div class="d-flex">
+                              <div style="margin-right: 10px">
+                                <img
+                                  class="rounded-circle"
+                                  src="assets/img/steps/favorite-placeholder.png"
+                                  width="50"
+                                  alt="favorite"
+                                />
+                              </div>
+                              <div>
+                                <p class="fs--1 mb-1 fw-medium">Ongoing</p>
+                                <h5 class="fw-medium mb-3">Trip to rome</h5>
+                                <h6 class="fs--1 fw-medium mb-2">
+                                  <span>40%</span> completed
+                                </h6>
+                                <div class="progress" style="height: 6px">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 40%"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn">
+                          <img
+                            src="assets/img/steps/heart.svg"
+                            width="20"
+                            alt="step"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="testimonial">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="mb-8 text-start">
+                <h5 class="text-secondary">Testimonials</h5>
+                <h3
+                  class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize"
+                >
+                  What people say about Us.
+                </h3>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+              <div class="pe-7 ps-5 ps-lg-0">
+                <div
+                  class="carousel slide carousel-fade position-static"
+                  id="testimonialIndicator"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      class="active"
+                      type="button"
+                      data-bs-target="#testimonialIndicator"
+                      data-bs-slide-to="0"
+                      aria-current="true"
+                      aria-label="Testimonial 0"
+                    ></button>
+                    <button
+                      class="false"
+                      type="button"
+                      data-bs-target="#testimonialIndicator"
+                      data-bs-slide-to="1"
+                      aria-current="true"
+                      aria-label="Testimonial 1"
+                    ></button>
+                    <button
+                      class="false"
+                      type="button"
+                      data-bs-target="#testimonialIndicator"
+                      data-bs-slide-to="2"
+                      aria-current="true"
+                      aria-label="Testimonial 2"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item position-relative active">
+                      <div class="card shadow" style="border-radius: 10px">
+                        <div
+                          class="position-absolute start-0 top-0 translate-middle"
+                        >
+                          <img
+                            class="rounded-circle fit-cover"
+                            src="assets/img/testimonial/author.png"
+                            height="65"
+                            width="65"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card-body p-4">
+                          <p class="fw-medium mb-4">
+                            &quot;OnCall Travel and Tours made our trip to Nepal
+                            truly unforgettable! From trekking through the
+                            breathtaking trails of the Himalayas to exploring
+                            the vibrant culture of Kathmandu, every detail was
+                            perfectly organized. The guides were knowledgeable,
+                            friendly, and passionate about showing us the hidden
+                            gems of Nepal. We felt safe, well taken care of, and
+                            had the adventure of a lifetime. If you’re looking
+                            to experience the true beauty of Nepal, OnCall
+                            Travel and Tours is the way to go!&quot;
+                          </p>
+                          <h5 class="text-secondary">Tulsi Gautam</h5>
+                          <p class="fw-medium fs--1 mb-0">Jhapa, Birtamod</p>
+                        </div>
+                      </div>
+                      <div
+                        class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                        style="
+                          border-radius: 10px;
+                          transform: translate(25px, 25px);
+                        "
+                      ></div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                      <div class="card shadow" style="border-radius: 10px">
+                        <div
+                          class="position-absolute start-0 top-0 translate-middle"
+                        >
+                          <img
+                            class="rounded-circle fit-cover"
+                            src="assets/img/testimonial/author2.png"
+                            height="65"
+                            width="65"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card-body p-4">
+                          <p class="fw-medium mb-4">
+                            &quot;I cannot recommend OnCall Travel and Tours
+                            enough! Their local tour packages offered the
+                            perfect mix of adventure and relaxation. We hiked
+                            through stunning landscapes, visited ancient
+                            temples, and even experienced the thrill of
+                            white-water rafting. The team was incredibly
+                            accommodating and tailored the tour to suit our
+                            interests. Nepal’s natural beauty is beyond words,
+                            and OnCall Travel and Tours made sure we experienced
+                            it all. Thank you for an incredible journey!&quot;
+                          </p>
+                          <h5 class="text-secondary">Rupesh Kumar Mandal</h5>
+                          <p class="fw-medium fs--1 mb-0">
+                            CEO of M & MB Soft Tech
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                        style="
+                          border-radius: 10px;
+                          transform: translate(25px, 25px);
+                        "
+                      ></div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                      <div class="card shadow" style="border-radius: 10px">
+                        <div
+                          class="position-absolute start-0 top-0 translate-middle"
+                        >
+                          <img
+                            class="rounded-circle fit-cover"
+                            src="assets/img/testimonial/author3.png"
+                            height="65"
+                            width="65"
+                            alt=""
+                          />
+                        </div>
+                        <div class="card-body p-4">
+                          <p class="fw-medium mb-4">
+                            &quot;Our family trip to Nepal was a dream come
+                            true, thanks to OnCall Travel and Tours. They
+                            crafted a personalized itinerary that took us to the
+                            most beautiful and adventurous spots in the country.
+                            From the serene lakes of Pokhara to the rugged
+                            mountains of Mustang, every moment was filled with
+                            awe and excitement. The service was top-notch, and
+                            the attention to detail was impeccable. We left
+                            Nepal with memories that will last a lifetime.
+                            Highly recommended!&quot;
+                          </p>
+                          <h5 class="text-secondary">Phoby Litchfield</h5>
+                          <p class="fw-medium fs--1 mb-0">Sydney, Australia</p>
+                        </div>
+                      </div>
+                      <div
+                        class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                        style="
+                          border-radius: 10px;
+                          transform: translate(25px, 25px);
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="carousel-navigation d-flex flex-column flex-between-center position-absolute end-0 top-lg-50 bottom-0 translate-middle-y z-index-1 me-3 me-lg-0"
+                    style="height: 60px; width: 20px"
+                  >
+                    <button
+                      class="carousel-control-prev position-static"
+                      type="button"
+                      data-bs-target="#testimonialIndicator"
+                      data-bs-slide="prev"
+                    >
+                      <img
+                        src="assets/img/icons/up.svg"
+                        width="16"
+                        alt="icon"
+                      />
+                    </button>
+                    <button
+                      class="carousel-control-next position-static"
+                      type="button"
+                      data-bs-target="#testimonialIndicator"
+                      data-bs-slide="next"
+                    >
+                      <img
+                        src="assets/img/icons/down.svg"
+                        width="16"
+                        alt="icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <h4 class="text-center">Clients We have Worked With:</h4>
+      <hr />
+      <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
+        <div class="container">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius: 10px">
+                <div class="card-body text-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/partner/1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius: 10px">
+                <div class="card-body text-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/partner/2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius: 10px">
+                <div class="card-body text-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/partner/3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius: 10px">
+                <div class="card-body text-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/partner/4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius: 10px">
+                <div class="card-body text-center">
+                  <img
+                    class="img-fluid"
+                    src="assets/img/partner/5.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact Section Content-->
+      <section class="contact-section section-lg bg-light text-center">
+        <div class="container-fluid">
+          <h3 style="color: black">CONTACT US</h3>
+          <div class="divider divider-decorate"></div>
+          <p>
+            Ready to explore the world with ease? Reach out to
+            <b>OnCall Tours and Travels Pvt. Ltd.</b> today. Our team is eager
+            to assist you with customized travel solutions that ensure
+            unforgettable experiences and seamless journeys. Let's start a
+            conversation and make your travel dreams a reality.
+          </p>
+
+          <div class="row">
+            <!-- First Column: Contact Information -->
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <div class="p-4">
+                <div class="info-wrap">
+                  <div class="info-item d-flex">
+                    <i class="mdi mdi-map-marker flex-shrink-0"></i>
+                    <div style="text-align: left">
+                      <h4>Address</h4>
+                      <p>Jadibuti, Kathmandu,44600</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex">
+                    <i class="mdi mdi-phone flex-shrink-0"></i>
+                    <div style="text-align: left">
+                      <h4>Call Us</h4>
+                      <p>+977-9851363054</p>
+                    </div>
+                  </div>
+                  <div class="info-item d-flex">
+                    <i class="mdi mdi-email flex-shrink-0"></i>
+                    <div style="text-align: left">
+                      <h4>Email Us</h4>
+                      <p>
+                        <a href="mailto:oncalltourstravels@gmail.com"
+                          >oncalltourstravels@gmail.com</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28267.526643536497!2d85.31771703633204!3d27.672766926921668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19014f5fca8d%3A0xcd01c32df66bee0e!2sOncall%20Tours%20%26%20Travels%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1726468394902!5m2!1sen!2snp"
+                  width="400"
+                  height="350"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <!-- Second Column: Contact Form -->
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="php-email-form d-flex align-items-center justify-content-center"
+              >
+                <form id="contactForm" name="submit-to-google-sheet">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <label for="name-field" class="pb-2">Your Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name-field"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email-field" class="pb-2">Your Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email-field"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="subject-field" class="pb-2">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        id="subject-field"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <label for="message-field" class="pb-2">Message</label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="10"
+                        id="message-field"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-md-12 text-center">
+                      <button
+                        class="button-submit"
+                        type="submit"
+                        style="
+                          margin-top: 10px;
+                          color: #ffffff;
+                          background: #0d5c7e;
+                          border: 0;
+                          padding: 12px 25px;
+                          border-radius: 50px;
+                          transition: background-color 0.3s ease;
+                        "
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-6">
+        <div class="container">
+          <div
+            class="py-8 px-5 position-relative text-center"
+            style="
+              background-color: rgba(223, 215, 249, 0.199);
+              border-radius: 129px 20px 20px 20px;
+            "
+          >
+            <div
+              class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"
+            >
+              <img
+                src="assets/img/cta/send.png"
+                style="max-width: 70px"
+                alt="send icon"
+              />
+            </div>
+            <div class="position-absolute end-0 top-0 z-index--1">
+              <img
+                src="assets/img/cta/shape-bg2.png"
+                width="264"
+                alt="cta shape"
+              />
+            </div>
+            <div
+              class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"
+            >
+              <img
+                src="assets/img/cta/shape-bg1.png"
+                style="max-width: 340px"
+                alt="cta shape"
+              />
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10">
+                <h2 class="text-secondary lh-1-7 mb-7">
+                  Subscribe to get information, latest news and other
+                  interesting offers about Cobham
+                </h2>
+                <form
+                  class="row g-3 align-items-center w-lg-75 mx-auto"
+                  id="newsletterForm"
+                >
+                  <div class="col-sm">
+                    <div class="input-group-icon">
+                      <input
+                        class="form-control form-little-squirrel-control"
+                        type="email"
+                        name="email"
+                        id="newsletter-email"
+                        placeholder="Enter email "
+                        aria-label="email"
+                      /><img
+                        class="input-box-icon"
+                        src="assets/img/cta/mail.svg"
+                        width="17"
+                        alt="mail"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button
+                      class="btn btn-danger orange-gradient-btn fs--1"
+                      type="submit"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-0 pb-lg-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
+              <img
+                class="mb-4"
+                src="assets/img/logo_refresh.png"
+                width="125"
+                alt="jadoo"
+              />
+              <p class="fs--1 text-secondary mb-0 fw-medium">
+                Welcome to Oncall Travel & Tours Pvt. Ltd.! We offer rental
+                services for cars and buses, perfect for exploring amazing local
+                destinations. Enjoy a memorable and hassle-free journey with our
+                reliable services!
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4
+                class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4"
+              >
+                Address
+              </h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#!"
+                    >Jadibuti, Kathmandu</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#!"
+                    >44600, Nepal</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="#!"
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4
+                class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4"
+              >
+                Company
+              </h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="about.html#value"
+                    >Mission</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="blog.html#blog"
+                    >Vision</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="about.html#team"
+                    >Team</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4
+                class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4"
+              >
+                Special Links
+              </h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="service.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="blog.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a
+                    class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="contact.html"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1"
+            >
+              <div class="icon-group mb-4">
+                <a
+                  class="text-decoration-none icon-item shadow-social"
+                  id="facebook"
+                  href="#!"
+                  ><i class="fab fa-facebook-f"> </i></a
+                ><a
+                  class="text-decoration-none icon-item shadow-social"
+                  id="instagram"
+                  href="#!"
+                  ><i class="fab fa-instagram"> </i></a
+                ><a
+                  class="text-decoration-none icon-item shadow-social"
+                  id="twitter"
+                  href="#!"
+                  ><i class="fab fa-twitter"> </i
+                ></a>
+              </div>
+              <h4 class="fw-medium font-sans-serif text-secondary mb-3">
+                Discover our app
+              </h4>
+              <div class="d-flex align-items-center">
+                <a href="#!">
+                  <img
+                    class="me-2"
+                    src="assets/img/play-store.png"
+                    alt="play store" /></a
+                ><a href="#!">
+                  <img src="assets/img/apple-store.png" alt="apple store"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+      <hr />
+
+      <div class="py-5">
+        <div class="col-md-6 mx-auto text-center">
+          <span class="mb-0 text-primary">
+            All rights reserved &copy; 2024 OnCall Travels & Tours
+          </span>
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <small class="d-inline mr-2">
+            Powered by
+            <a
+              href="https://mbsoftech.com.np/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: blue"
+              >M & MB Softech</a
+            >
+            – Building your digital future
+          </small>
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <script
+      src="//code.tidio.co/1ece3oawpq0buawc3rpbhpb6khps9kf3.js"
+      async
+    ></script>
+
+    <!--JS for input validation-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("bookingForm")
+          .addEventListener("submit", function (event) {
+            // Get form elements
+            const from = document.querySelector('input[name="from"]');
+            const to = document.querySelector('input[name="to"]');
+            const departDate = document.querySelector(
+              'input[name="departDate"]'
+            );
+            const adults = document.querySelector('input[name="adults"]');
+            const contact = document.querySelector('input[name="contact"]');
+
+            // Validate required fields
+            if (
+              !from.value ||
+              !to.value ||
+              !departDate.value ||
+              !adults.value ||
+              !contact.value
+            ) {
+              alert("Please fill out all required fields.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
+
+            // Validate contact number
+            const contactValue = contact.value;
+            if (!/^\d{1,13}$/.test(contactValue)) {
+              alert("Contact number must be numeric and up to 13 digits.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
+
+            // If all validations pass, form submission will proceed
+          });
+      });
+    </script>
+
+    <!--JS to dynamically replace the <select> elements with custom input fields and dropdown lists-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function setupDropdown(inputId, dropdownId) {
+          const input = document.getElementById(inputId);
+          const dropdown = document.getElementById(dropdownId);
+          const options = dropdown.querySelectorAll("div");
+
+          // Show the dropdown list when the input field is clicked
+          input.addEventListener("click", function () {
+            dropdown.style.display = "block";
+          });
+
+          // Filter dropdown options based on user input
+          input.addEventListener("input", function () {
+            const filter = input.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
+            options.forEach((option) => {
+              if (option.textContent.toLowerCase().includes(filter)) {
+                // Check if option includes the input value
+                option.style.display = "block"; // Show option if it matches the input
+              } else {
+                option.style.display = "none"; // Hide option if it doesn't match the input
+              }
+            });
+          });
+
+          // Set input field value to the selected option and hide the dropdown
+          options.forEach((option) => {
+            option.addEventListener("click", function () {
+              input.value = option.textContent; // Set input value to the selected option text
+              dropdown.style.display = "none"; // Hide the dropdown list
+            });
+          });
+
+          // Hide the dropdown list when clicking outside of the input field or dropdown list
+          document.addEventListener("click", function (event) {
+            if (
+              !input.contains(event.target) && // Check if the click is outside the input field
+              !dropdown.contains(event.target) // Check if the click is outside the dropdown list
+            ) {
+              dropdown.style.display = "none"; // Hide the dropdown list
+            }
+          });
+        }
+
+        // Setup the dropdowns for both "From" and "To" inputs
+        setupDropdown("fromCityInput", "fromDropdownList");
+        setupDropdown("toCityInput", "toDropdownList");
+      });
+    </script>
+
+    <!--JS for input validation-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("bookingForm")
+          .addEventListener("submit", function (event) {
+            // Get form elements
+            const from = document.querySelector('select[name="from"]');
+            const to = document.querySelector('select[name="to"]');
+            const departDate = document.querySelector(
+              'input[name="departDate"]'
+            );
+            const adults = document.querySelector('input[name="adults"]');
+            const contact = document.querySelector('input[name="contact"]');
+
+            // Validate required fields
+            if (
+              !from.value ||
+              !to.value ||
+              !departDate.value ||
+              !adults.value ||
+              !contact.value
+            ) {
+              alert("Please fill out all required fields.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
+
+            // Validate contact number
+            const contactValue = contact.value;
+            if (!/^\d{1,13}$/.test(contactValue)) {
+              alert("Contact number must be numeric and up to 13 digits.");
+              event.preventDefault(); // Prevent form submission
+              return; // Exit the function
+            }
+          });
+      });
+    </script>
+
+    <!--JS for Booking form-->
+    <script>
+      const form1 = document.getElementById("bookingForm");
+      const webAppUrl1 =
+        "https://script.google.com/macros/s/AKfycbyCsg9649o1hlULQvcPCcyieueXpK7R9eErLoP76KWnlTT22R40_4CS6m--FC63hk1S/exec"; // Replace with your actual Web App URL
+
+      form1.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form1); // Use form1 here
+        formData.append("action", "submit");
+        formData.append("sheet", "Bookings"); // Specify that we're submitting to Bookings
+
+        fetch(webAppUrl1, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              alert("Booking Successful");
+              form1.reset(); // Use form1 to reset the form
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+
+    <!--JS for Contact form-->
+    <script>
+      const form2 = document.getElementById("contactForm");
+      const webAppUrl2 =
+        "https://script.google.com/macros/s/AKfycbyWvVcGXL7nsII1CQyVp_ZJlHukqvsw9GoZ49DeIklFe2deC26USozqw-bfNpBnftnR/exec"; // Replace with your actual Web App URL
+
+      form2.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form2); // Use form2 here
+        formData.append("action", "submit");
+        formData.append("sheet", "Messages"); // Specify that we're submitting to Messages
+
+        fetch(webAppUrl2, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              alert("Message Sent");
+              form2.reset(); // Use form2 to reset the form
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+
+    <!--JS for Newsletter Subscription-->
+    <script>
+      const form3 = document.getElementById("newsletterForm");
+      const webAppUrl3 =
+        "https://script.google.com/macros/s/AKfycbwG_yJEJsJsG_7j9upLlvaxaOpwHcFfu4MJ6N_RHOL2Afn4-g34QkGzcO27KF0zWjuSWw/exec"; // Replace with your actual Web App URL
+
+      form3.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form3); // Use form3 here
+        formData.append("action", "submit");
+        formData.append("sheet", "Newsletter"); // Specify that we're submitting to Newsletter
+
+        fetch(webAppUrl3, {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.status === "success") {
+              alert("Subscription Added");
+              form3.reset(); // Use form to reset the form
+            }
+          })
+          .catch((error) => console.error("Error:", error));
+      });
+    </script>
+
+
+<!--JS for Vehicles Section-->
+<script>
+  // Fetch Vehicles data from Google Sheets
+  const vehicleContainer = document.getElementById('vehicle-container'); // Target the specific container using its ID
+  const webAppUrl = 'https://script.google.com/macros/s/AKfycbxtHP7oYbOvWQpuFpJBRaLX5J8TIpNeBdb15BxnnP7K1G0PUkdTFXHzuvnFBaBaTyev/exec';  // Replace with your actual Web App URL
+
+  function fetchAllData() {
+    const fetchData = new FormData();
+    fetchData.append('action', 'fetch');  // Action for fetching data from Google Sheets
+
+    fetch(webAppUrl, {
+      method: 'POST',
+      body: fetchData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.status === 'success') {
+        displayVehicles(data.data);  // Call function to display vehicles
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  }
+
+  // Function to display vehicles in cards
+  function displayVehicles(vehicles) {
+    vehicleContainer.innerHTML = ''; // Clear existing cards in the container
+
+    vehicles.forEach((vehicle) => {
+      const card = document.createElement('div');
+      card.classList.add('col-md-4', 'mb-4');  // Matching your Bootstrap column structure
+
+      // Create the card HTML, matching your structure
+      card.innerHTML = `
+        <div class="card overflow-hidden shadow">
+          <img
+            class="card-img-top"
+            src="${vehicle.imageUrl}"  // Image URL from vehicle data
+            alt="${vehicle.name}"       // Vehicle name for alt text
+          />
+          <div class="card-body py-4 px-3">
+            <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+              <h4 class="text-secondary fw-medium">
+                <a class="link-900 text-decoration-none stretched-link">
+                  ${vehicle.name}   <!-- Vehicle name -->
+                </a>
+              </h4>
+              <span class="fs-1 fw-medium">${vehicle.seater} seater</span>  <!-- Vehicle seater -->
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                src="assets/img/dest/navigation.svg"
+                style="margin-right: 14px"
+                width="20"
+                alt="navigation"
+              />
+              <span class="fs-0 fw-medium">Rs ${vehicle.price} per day</span>  <!-- Vehicle price -->
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Append the card to the vehicle container
+      vehicleContainer.appendChild(card);
+    });
+  }
+
+  // Load all vehicles when the page loads
+  window.onload = fetchAllData;
+</script>
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/core.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
